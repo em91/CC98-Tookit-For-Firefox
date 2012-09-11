@@ -1,0 +1,77 @@
+<!Doctype>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="typo.css">
+		<style type="text/css">
+		body{
+			background:white;
+			border:0;
+			color:#000;
+			font-size:12px;
+			padding:0px 15px 8px 15px;
+			font-family:Verdana, sans-serif !important;
+		}
+
+		a:link,a:active,a:visited {
+ 			text-decoration: none;
+ 			color:#000000;
+		}
+		a:hover {
+ 			text-decoration: underline;
+ 			color:#4455aa;
+		}
+		.header{
+			position:fixed;
+			background:white;
+			height:30px;
+			line-height:25px;
+			overflow:hidden;
+			width:95%;
+		}
+		.header h3{
+			float:left;
+		}
+		.header .tip{
+			float:left;
+			margin-left:10px;
+			font-size:smaller;
+			color:#ccc;
+		}
+		#close{float:right;}
+		#recentPosts{list-style:none !important;margin:8px auto 20px auto;padding-top:30px;}
+		#recentPosts > li{list-style:none !important;padding:5px;border-bottom:1px dashed #eee;}
+		ul#recentposts>li>img:nth-child(1){vertical-align:middle;margin:0 3px;}
+		ul#recentposts>li>div[id^='p']{
+			margin:5px 0;
+			padding:5px 0 5px 15px;
+			line-height:18px;
+			border-left:5px solid #e4e8ef;
+		}
+		#pager{
+			float:right;
+		}
+		#pagerSelector{
+			vertical-align: middle;
+			margin: 5px;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="header">
+				<h3>帖子记录器</h3>
+				<span class="tip">按Esc关闭面板</span>
+				<a href="http://www.cc98.org/dispbbs.asp?boardID=39&ID=3971102" style="color:red" target="_blank" id="cc98Post" class="tip">[建议/反馈]</a>
+				<div id="pager">
+					<a href="###" id="prev">[上一页]</a>
+					<select name="pager" id="pagerSelector">
+					</select>
+					<a href="###" id="next">[下一页]</a>
+				</div>
+			</div>
+			<ul id="recentPosts">
+			</ul>
+		</div>
+	</body>
+</html>

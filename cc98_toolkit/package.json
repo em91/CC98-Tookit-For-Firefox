@@ -1,0 +1,47 @@
+{
+    "name": "cc98_toolkit", 
+    "license": "MPL 2.0", 
+    "author": "em91 <pascale0820@gmail.com>",
+    "version": "0.1.9", 
+    "fullName": "cc98 toolkit", 
+    "id": "jid1-6PBBRACzWEjSBA", 
+    "homepage":"http://www.cc98.org/dispbbs.asp?Boardid=39&ID=3971102",
+    "description": "帮助你记录在cc98论坛上回复的帖子。",
+    "preferences": [{
+        "name": "domain",
+        "title": "域设置",
+        "description": "[反向代理用户可修改为私有域，修改后重启扩展]",
+        "type": "string",
+        "value": "http://www.cc98.org"
+    },{
+        "name": "beautify",
+        "title": "界面美化",
+        "description": "[屏蔽广告，更改字体等]",
+        "type": "bool",
+        "value": true
+    },{
+        "name": "hideQmd",
+        "title": "屏蔽签名档",
+        "description": "[屏蔽用户签名档]",
+        "type": "bool",
+        "value": true
+    },{
+        "name": "ajaxReply",
+        "title": "开启快捷回复",
+        "description": "[回复不需跳转页面]",
+        "type": "bool",
+        "value": true
+    },{
+        "name": "replyNotify",
+        "title": "开启引用和@通知",
+        "description": "[引用后通过站短通知对方]",
+        "type": "bool",
+        "value": true
+    },{
+        "name": "replyNotify",
+        "title": "开启@功能",
+        "description": "[类似weibo的@功能]",
+        "type": "bool",
+        "value": true
+    }]
+}
